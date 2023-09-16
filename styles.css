@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box; /*all elements inlcudes padding and border set padding and margin to 0*/
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+nav {
+  /*this contains our nav bar*/
+  background: yellow;
+  display: flex; /*have to set this to flex aswell, so the logo, fake logo flex but outside of the menu flex*/
+}
+
+.logo,
+.logofake {
+  /*the logo 80by80px, but making a empty fake div on the other side of menu, because I want the menu centered despite the logo*/
+  width: 80px;
+  height: 80px; /*since its flexing we can't add height (then it would flex more), but we can shrink it below 80px where nav where set*/
+  background-color: red;
+  flex-shrink: 0; /*since the content/menu pushed out overflowing the logos, I had to set the logos to shrink: 0; so it doesn go over them, which means these items are NOT allowed to shrink; KEEP IN MIND!*/
+}
+
+.menu {
+  /*our actual menu, the flexing parent*/
+  display: flex; /*makes menu flex row full size horizontally*/
+  width: 100%; /*take up the whole space that allowed*/
+  height: 80px; /*sets the height of the whole bar*/
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; /*gap size between the links*/
+}
+
+.menu a {
+  color: blue;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 21px 0px 21px 0px;
+  border: 1px solid black;
+}
+
+.menu, /*The actual menu, the flexing parent*/
+.submenu {
+  list-style-type: none;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  margin-top: 21px; /*so it doesn't clip the .menu*/
+  background-color: green;
+}
+
+.subbar:hover .submenu,
+.submenu a {
+  /*when subbar "link/ridskolan" is in focus, then the immediately following "element" (.submenu) is going to display as block */
+  display: block; /*would be the same result as in display: flex; with flex-direction: column; */
+}
