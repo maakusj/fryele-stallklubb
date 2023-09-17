@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal - Fryele Stallklubb</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6277f84f94.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a class="horsetext" href="index.html">
+            <div class="horselogo">
+              <span style="font-size: 1.5rem;">
+                <i class="fa-regular fa-chess-knight fa-flip-horizontal fa-2xl" style="color: #683e0f;"></i>
+                <br/>
+                <span class="horsetext">FRYELE</span>
+              </span>
+            </div>
+          </a>
+        </div>
+        <!--logo 80by80px-->
+        <input type="checkbox" id="nav-button"></input> <!--creating a checkbox linked to label that when clicking on the "hamburger" icon a dropdown menu displays-->
+        <label class="label-nav" for="nav-button">MENY&#9660</label>
+        <ul class="menu">
+        <!--our actual flexing menu-->
+          <li class="marginhome"><a href="index.html">Hem</a></li>
+          <li class="subbar">
+          <!--the link "ridskolan" (subbar) is both hoverable and clickable to get to the submenu-->
+            <a href="#">Ridskolan<span style="font-size: 1.2rem">&#9660</span></a>
+            <ul class="submenu">
+              <li><a href="hastarna.html">Våra Hästar</a></li>
+              <li><a href="personal.html">Personal</a></li>
+              <li><a href="priser.html">Börja Rida</a></li>
+            </ul>
+          </li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="logofake"></div> <!--for centering the menu (80by80px)-->
+      </nav>
+    </header>
+    <section class="bgwrapper">
+      <img class="bgpicture" src="./images/horseriding1.jpg" alt="instructors riding on horses with pupils" />
+    </section>
+    <main class="main-wrapper">
+      <section class="content-wrapper">
+        <h1>Anställda</h1>
+        <div class="content-profile">
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal2.jpg" alt="profile photo of instructor"/>
+              <h2>Malin Svensson</h2>
+              <ul>
+                <li><h3>Ridlärare</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal1.jpg" alt="profile photo of instructor"/>
+              <h2>Jessica Oscarsson</h2>
+              <ul>
+                <li><h3>Ridlärare</h3></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content-wrapper">
+        <h1>Styrelsen</h1>
+        <div class="content-profile">
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal6.jpg" alt="profile photo of commissioner"/>
+              <h2>Angelica Andersson</h2>
+              <ul>
+                <li><h3>Ordförande</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal3.jpg" alt="profile photo of commisioner"/>
+              <h2>Anders Svensson</h2>
+              <ul>
+                <li><h3>Ledamot</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal5.jpg" alt="profile photo of commisioner"/>
+              <h2>Monica Svensson</h2>
+              <ul>
+                <li><h3>Ledamot</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal4.jpg" alt="profile photo of commisioner"/>
+              <h2>Ture Glad</h2>
+              <ul>
+                <li><h3>Ledamot</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal9.jpg" alt="profile photo of commisioner"/>
+              <h2>Kristian Hellqvist</h2>
+              <ul>
+                <li><h3>Ledamot</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal7.jpg" alt="profile photo of commisioner"/>
+              <h2>Barbro Nilsson</h2>
+              <ul>
+                <li><h3>Ledamot</h3></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profile-post">
+            <div class="profile">
+              <img class="profile-photo" src="./images/personal8.jpg" alt="profile photo of commisioner"/>
+              <h2>Elisabeth Törnkvist</h2>
+              <ul>
+                <li><h3>Ledamot</h3></li>
+              </ul>
+            </div>
+          </div>            
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-social">
+        <span style="font-size: 1.5rem;">
+          <a class="soc" href="https://www.instagram.com/">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #683e0f;"></i>
+          </a>
+          <a class="soc" href="https://sv-se.facebook.com/">
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #683e0f;"></i>
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

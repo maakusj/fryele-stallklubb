@@ -14,7 +14,6 @@ nav {
   background: #fff;
   display: flex; /*have to set this to flex aswell, so the logo, fake logo flex but outside of the menu flex*/
   height: 80px; /*sets the height of the whole bar*/
-  border: 1px solid black;
 }
 
 .logo,
@@ -24,7 +23,6 @@ nav {
   height: 80px; /*since its flexing we can't add height (then it would flex more), but we can shrink it below 80px where nav where set*/
   background-color: #fff;
   flex-shrink: 0; /*since the content/menu pushed out overflowing the logos, I had to set the logos to shrink: 0; so it doesn go over them, which means these items are NOT allowed to shrink; KEEP IN MIND!*/
-  border: 1px solid black;
 }
 
 .horselogo {
@@ -53,7 +51,6 @@ nav {
   text-decoration: none;
   font-size: 2rem;
   padding: 21px 0px 21px 0px;
-  border: 1px solid black;
 }
 
 .menu, /*The actual menu, the flexing parent*/
@@ -73,7 +70,9 @@ nav {
   overflow: hidden; /*hide the bar, make it invisible*/
   position: absolute; /*positions itself right under*/
   margin-top: 21px; /*so it doesn't clip the .menu*/
-  background-color: #fff;
+  background-color: #ffffffd6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .subbar:hover .submenu {
@@ -92,7 +91,6 @@ nav {
 .label-nav {
   display: none;
   color: #683e0f;
-  border: 1px solid black;
   margin-top: 0px;
   padding: 29px 10px 29px 10px;
 }
@@ -130,7 +128,130 @@ nav {
 }
 
 .main-wrapper {
-  margin: 0px 15px 0px 15px; /*look from time to time what looks best*/
+  display: flex;
+  flex-direction: column;
+  margin: 80px; /*look from time to time what looks best*/
+  justify-content: space-evenly;
+}
+
+.content-wrapper {
+  margin: 25px 0px 25px 0px;
+  padding: 15px 15px 58px 15px;
+  background-color: #f9f9fb;
+  border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.post {
+  flex-basis: 350px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar table {
+  flex-basis: 350px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  border-spacing: 0px;
+}
+
+.calendar th,
+td {
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.yellow {
+  background-color: #ffce0d;
+  color: black;
+}
+.blue {
+  background-color: #0080b5;
+  color: white;
+}
+.green {
+  background-color: #59b509;
+  color: white;
+}
+
+.calendar-text {
+  text-align: center;
+  font-size: large;
+  opacity: 0.4;
+}
+
+.calendar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  display: flex;
+  height: 80px;
+  background-color: #683e0f4f;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-social {
+  padding: 15px;
+}
+
+.soc {
+  text-decoration: none;
+}
+
+.content-profile {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.profile-post {
+  flex-basis: 350px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.profile-photo {
+  height: 250px;
+}
+
+.profile img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-profile ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.content-single {
+  justify-content: center;
 }
 
 @media (max-width: 820px) {
@@ -189,5 +310,18 @@ nav {
   #nav-button:checked ~ .menu {
     height: 100vh; /*should take the whole vh*/
     transition: 0.25s ease-in; /*ease that in*/
+  }
+
+  .main-wrapper {
+    margin: 0px;
+  }
+
+  .content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-profile {
+    justify-content: center;
   }
 }
