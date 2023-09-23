@@ -254,6 +254,35 @@ footer {
   justify-content: center;
 }
 
+.contact {
+  width: 100%;
+}
+
+.side-by-side {
+  /*contact page*/
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.content-side {
+  /*contact page*/
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.post-contact {
+  /*contact page*/
+  flex-basis: 0px;
+  width: 100%;
+}
+
+#message {
+  size: 500;
+}
+
 @media (max-width: 820px) {
   nav {
     display: block; /*stop flexing, now i want the logos to float on each side of the nav (since .menu is occupied used as a dropdown)*/

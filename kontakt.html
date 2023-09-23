@@ -11,7 +11,7 @@
     ></script>
   </head>
   <body>
-    <div>
+    <header>
       <nav>
         <div class="logo">
           <a class="horsetext" href="index.html">
@@ -43,45 +43,63 @@
         </ul>
         <div class="logofake"></div> <!--for centering the menu (80by80px)-->
       </nav>
-    </div>
+    </header>
     <section class="bgwrapper">
       <img class="bgpicture" src="./images/fryele-hus.jpg" alt="picture of the facility" />
     </section>
     <main class="main-wrapper">
-      <section class="content-wrapper">
-        <h2>Kontakta Oss</h2>
-        <div class="content">
-          <article class="post">
-            <h3>
-              Ridlärarna
-            </h3>
-            <br/><h4>Malin Svensson</h4>Telefon: xxx-xxxxxxx</p><p>Email: malin.svensson@fryele.se</p><br/>
-            <p><h4>Jessica Oscarsson</h4>Telefon: xxx-xxxxxxx<p>Email: jessica.oscarsson@fryele.se</p>
-          </article>
-          <article class="post">
-            <h3>
-              Styrelsen
-            </h3>
-            <br/><h4>Angelica Andersson</h4><p>(Ordförande)<br/>Telefon: xxx-xxxxxxx</p><p>Email: angelica.andersson@fryele.se</p><br/>
-          </article>
-          <article class="post">
-            <h3>
-              Adress
-            </h3>
-            <br/><h4>Fryele Stallklubb</h4>
-                <p>Fryele Prostgård 1</p>
-                <p>331 96 Värnamo</p>
-                <p>BG-nr: xxx - xxxx</p>
-                <p>Orgnr: xxxxxx-xxxx</p>
-          </article>
-        </div>
-      </section>
+      
+      <div class="side-by-side"> <!--wanted to put two sections (contact info + message) side-by-side-->
+      
+          <section class="content-wrapper contact">
+          <h2>Kontakta Oss</h2>
+          <div class="content-side ">
+            <article class="post post-contact">
+              <h3>
+                Ridlärarna
+              </h3>
+              <br/><h4>Malin Svensson</h4>Telefon: xxx-xxxxxxx</p><p>Email: malin.svensson@fryele.se</p><br/>
+              <p><h4>Jessica Oscarsson</h4>Telefon: xxx-xxxxxxx<p>Email: jessica.oscarsson@fryele.se</p>
+            </article>
+            <article class="post post-contact">
+              <h3>
+                Styrelsen
+              </h3>
+              <br/><h4>Angelica Andersson</h4><p>(Ordförande)<br/>Telefon: xxx-xxxxxxx</p><p>Email: angelica.andersson@fryele.se</p><br/>
+            </article>
+            <article class="post post-contact">
+              <h3>
+                Adress
+              </h3>
+              <br/><h4>Fryele Stallklubb</h4>
+                  <p>Fryele Prostgård 1</p>
+                  <p>331 96 Värnamo</p>
+                  <p>BG-nr: xxx - xxxx</p>
+                  <p>Orgnr: xxxxxx-xxxx</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="content-wrapper contact">
+          <h2>Skicka Meddelande</h2>
+          <div class="content-side content-single">
+            <div id="message">
+              <label for="messageField"><h3>Meddela våra ridlärare:</h3></label> <!--label makes the text clickable-->
+              <input type="text" id="messageField" name="messageField" /> <!--input text field-->
+              <button id="messageBtn">Skicka</button> <!--submit button-->
+            </div>
+          </div>
+        </section>
+      
+      </div>
+
       <section class="content-wrapper">
         <h2>Om Oss</h2>
         <div class="content content-single">
           <article class="post">
             <p>Fryele Stallklubb är en förening med ca 300 medlemmar och två anställda ridlärare. Föreningen har 20 hästar i sin verksamhet.<p><br/>Det är ca 150 elever som varje vecka kommer till klubben för att rida. Klubbens anläggning består av ett stall, en paddock och ett ridhus. Medlemmarna hjälper till att ta hand om hästarna på helgerna.</p><br/>Klubben har en styrelse som består av en ordförande och sex ledarmöten.</p>
           </article>
+        </div>
       </section>
     </main>
     <footer>
@@ -96,5 +114,6 @@
         </span>
       </div>
     </footer>
+    <script src="script.js" charset="UTF-8"></script>
   </body>
 </html>
